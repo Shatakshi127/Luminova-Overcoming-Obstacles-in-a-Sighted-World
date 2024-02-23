@@ -1,0 +1,28 @@
+.handbookimg{
+    width: 80%;
+    border-radius: 50px;
+}
+.brochimg{
+    width: 90%;
+    border-radius: 30px;
+}
+.handbooks{
+    padding-left: 8%;
+}
+.brochures{
+    padding-left: 8%;
+}
+
+@media screen and (max-width:765px){
+    .handbooks,.brochures{
+        text-align: center !important;
+    }
+}
+
+
+@media screen and (max-width: 900px) and (min-width : 767px) {
+    .we_can_help_you {
+        font-size: 65px;
+        }
+}
+    

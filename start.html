@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luminova</title>
+  <style>
+    /* CSS for red background and centering the image */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Styling for the button image */
+    #next-button {
+      cursor: pointer;
+      max-width: 200px; /* Adjust the image size as needed */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Image acting as the button -->
+  <img id="next-button" src="images/llogo.jpg" alt="Next Screen" onclick="goToNextScreen()">
+
+  <script>
+    // JavaScript function to handle button click and redirect to the next screen
+    function goToNextScreen() {
+      // Replace 'next-screen.html' with the URL of your next screen
+      window.location.href = 'login.html';
+    }
+  </script>
+
+  
+</body>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Luminova_Bot"
+  agent-id="c3abb119-811b-4af0-a197-56da72054043"
+  language-code="en"
+></df-messenger>
+
+
+</html>
